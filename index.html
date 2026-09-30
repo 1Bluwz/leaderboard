@@ -2,26 +2,59 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>zTeam | Leaderboard</title>
+    <link rel="icon" href="data:image/png;base64,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">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
     <style>
-        body { background-color: #0d111a; color: white; font-family: 'Inter', sans-serif; overflow-x: hidden; }
-        
-        /* TARJETA DE JUGADOR PRINCIPAL */
-        .player-card {
-            background: linear-gradient(90deg, #111723 0%, #0f1420 100%); 
-            border: 1px solid #1f283d; border-radius: 8px; margin-bottom: 10px;
-            display: flex; align-items: center; justify-content: space-between;
-            transition: all 0.25s ease; cursor: pointer;
-            position: relative; overflow: hidden; height: 72px;
+        :root {
+            --bg-deep: #070a12;
+            --bg-body: #0d111a;
+            --accent: #ff4d4d;
+            --border: #1f283d;
         }
-        .player-card:hover { border-color: #ff4d4d; transform: translateX(4px); }
+        body { background-color: var(--bg-body); color: white; font-family: 'Inter', sans-serif; overflow-x: hidden; }
 
-        /* ZONA DE POSICIÓN CORTADA DIAGONAL */
+        /* ── NAVBAR ─────────────────────────────────────────── */
+        .zt-nav { background: #0a0d16; border-bottom: 1px solid var(--border); }
+        .zt-logo-emblem { width: 34px; height: 34px; border-radius: 50%; box-shadow: 0 0 0 2px rgba(255,77,77,0.35); }
+        .zt-navlink {
+            display: flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 700;
+            color: #8b93a7; padding: 6px 10px; border-radius: 6px; transition: color .15s ease, background-color .15s ease;
+        }
+        .zt-navlink:hover { color: #fff; background: rgba(255,255,255,0.05); }
+        .zt-navlink.active { color: #fff; }
+        .zt-search {
+            background: #131926; border: 1px solid var(--border); border-radius: 8px;
+            padding: 7px 12px; font-size: 12px; color: #cbd2e1; width: 190px;
+        }
+        .zt-search::placeholder { color: #5b6478; }
+        .zt-search:focus { outline: none; border-color: var(--accent); }
+
+        /* ── TABS DE MODALIDAD ──────────────────────────────── */
+        .mode-tab {
+            display: flex; flex-direction: column; align-items: center; gap: 4px;
+            padding: 10px 6px 8px; font-size: 11px; font-weight: 800; letter-spacing: .02em;
+            color: #5b6478; border-bottom: 2px solid transparent; transition: color .15s ease, border-color .15s ease;
+        }
+        .mode-tab.active { color: #fff; border-color: var(--accent); }
+        .mode-tab:hover:not(.active) { color: #9aa3b8; }
+
+        /* ── TARJETA DE JUGADOR ─────────────────────────────── */
+        .player-card {
+            background: linear-gradient(90deg, #111723 0%, #0f1420 100%);
+            border: 1px solid var(--border); border-radius: 8px; margin-bottom: 10px;
+            display: flex; align-items: center; justify-content: space-between;
+            transition: border-color 0.2s ease, transform 0.2s ease;
+            position: relative; overflow: hidden; min-height: 72px;
+        }
+        .player-card:hover, .player-card:focus-visible { border-color: var(--accent); transform: translateX(4px); }
+        .player-card:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
         .rank-badge-zone {
-            height: 100%; width: 135px; display: flex; align-items: center; padding-left: 15px;
+            height: 100%; width: 135px; flex-shrink: 0; display: flex; align-items: center; padding-left: 15px;
             position: relative; z-index: 2; clip-path: polygon(0 0, 85% 0, 65% 100%, 0% 100%);
         }
         .bg-top1 { background: linear-gradient(135deg, #e0a910 0%, #8c6603 100%); }
@@ -29,47 +62,61 @@
         .bg-top3 { background: linear-gradient(135deg, #cc6925 0%, #783a11 100%); }
         .bg-normal-rank { background: linear-gradient(135deg, #1b2436 0%, #131a26 100%); border-right: 2px solid #2d364d; }
         .rank-num-text { font-size: 1.5rem; font-weight: 900; font-style: italic; letter-spacing: -1px; }
+        .medal-icon { position: absolute; top: -4px; left: 24px; font-size: 14px; z-index: 3; filter: drop-shadow(0 1px 2px rgba(0,0,0,.6)); }
 
         .avatar-inside-rank { height: 100%; width: 55px; display: flex; align-items: flex-end; justify-content: center; overflow: hidden; }
         .avatar-inside-rank img { height: 115%; object-fit: contain; transform: translateY(8px); }
 
-        /* EFECTO DE DESTELLO LUMINOSO (TOP 1, 2, 3) */
+        .player-name { max-width: 30vw; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
         .podium-glow::after {
             content: ''; position: absolute; top: 0; left: -150%; width: 50%; height: 100%;
             background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.12), transparent);
             transform: skewX(-25deg); animation: sweepGlow 5s infinite ease-in-out;
         }
         @keyframes sweepGlow { 0% { left: -150%; } 12% { left: 150%; } 100% { left: 150%; } }
-
-        /* CIRCULOS DE TIERS MINIATURA (LISTA PRINCIPAL) */
-        .tier-mini-badge { display: flex; flex-direction: column; align-items: center; width: 42px; }
-        .tier-circle-icon {
-            width: 34px; height: 34px; background: #171f30; border: 2px solid #2b3752;
-            border-radius: 50%; display: flex; align-items: center; justify-content: center; p: 4px; overflow: hidden;
+        @media (prefers-reduced-motion: reduce) {
+            .podium-glow::after { animation: none; }
+            .player-card { transition: none; }
         }
-        .tier-circle-icon img { width: 100%; height: 100%; object-fit: cover; }
-        .tier-label-sub { font-size: 9px; font-weight: 900; margin-top: 2px; text-transform: uppercase; text-align: center; }
 
-    
-        .tier-s-plus { color: #ffcc00; text-shadow: 0 0 6px rgba(255,204,0,0.4); }
-        .tier-s { color: #ffaa00; }
-        .tier-a-plus { color: #ff5555; text-shadow: 0 0 6px rgba(255,85,85,0.4); }
-        .tier-a { color: #ff3333; }
-        .tier-none { color: #4b5563; }
+        /* ── REGIÓN ─────────────────────────────────────────── */
+        .region-chip {
+            font-size: 10px; font-weight: 900; padding: 3px 8px; border-radius: 5px;
+            letter-spacing: .03em; flex-shrink: 0;
+        }
 
-        
+        /* ── CHIPS DE TIER (estilo mctiers: ícono + código) ─── */
+        .tier-chip {
+            display: flex; align-items: center; gap: 5px; padding: 3px 8px 3px 3px;
+            border-radius: 999px; background: #131a26; border: 1px solid #253247; flex-shrink: 0;
+        }
+        .tier-chip .icon-circle {
+            width: 22px; height: 22px; border-radius: 50%; background: #0d1420;
+            display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0; font-size: 11px;
+        }
+        .tier-chip .icon-circle img { width: 68%; height: 68%; object-fit: contain; }
+        .tier-chip .code { font-size: 10px; font-weight: 900; letter-spacing: .02em; }
+
+        .tier-z .code { color: #ffcc00; } .tier-z { border-color: rgba(255,204,0,0.5); }
+        .tier-s .code { color: #ffaa00; } .tier-s { border-color: rgba(255,170,0,0.4); }
+        .tier-a-plus .code { color: #ff5555; } .tier-a-plus { border-color: rgba(255,85,85,0.4); }
+        .tier-a-minus .code { color: #a78bfa; } .tier-a-minus { border-color: rgba(167,139,250,0.4); }
+        .tier-b-plus .code { color: #38bdf8; } .tier-b-plus { border-color: rgba(56,189,248,0.4); }
+        .tier-b .code { color: #94a3b8; } .tier-b { border-color: rgba(148,163,184,0.3); }
+        .tier-none .code { color: #4b5563; }
+
         .modal-position-box {
             background: #171f30; border: 1px solid #25314a; border-radius: 6px;
             display: flex; align-items: center; overflow: hidden; height: 44px; margin-bottom: 8px;
         }
         .modal-position-left {
-            height: 100%; width: 90px; display: flex; align-items: center; justify-content: center;
+            height: 100%; width: 90px; flex-shrink: 0; display: flex; align-items: center; justify-content: center;
             font-size: 1.25rem; font-weight: 900; font-style: italic;
             clip-path: polygon(0 0, 100% 0, 78% 100%, 0% 100%);
         }
 
-        /* MODAL */
-        #player-modal {
+        #player-modal, #credits-modal {
             display: none; position: fixed; inset: 0; background: rgba(5,7,12,0.94);
             z-index: 100; align-items: center; justify-content: center; backdrop-filter: blur(8px);
         }
@@ -77,20 +124,28 @@
             background: #0f1422; border: 1px solid #25314a; width: 95%; max-width: 430px;
             padding: 24px; border-radius: 16px; position: relative; max-height: 90vh; overflow-y: auto;
         }
-        
-        /* Ocultar barra de scroll del modal */
         .modal-content::-webkit-scrollbar { width: 0px; background: transparent; }
+
+        button:focus-visible, a:focus-visible, input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+        @media (max-width: 480px) {
+            .rank-badge-zone { width: 108px; padding-left: 10px; }
+            .avatar-inside-rank { width: 46px; }
+            .player-name { max-width: 26vw; }
+            .zt-search { display: none; }
+        }
     </style>
 </head>
-<body class="p-4 md:p-10 bg-[#070a12]">
+<body class="bg-[#070a12]">
 
+    <!-- ── MODAL DE JUGADOR ─────────────────────────────────── -->
     <div id="player-modal" onclick="closeModal()">
         <div class="modal-content" onclick="event.stopPropagation()">
-            <button class="absolute top-4 right-4 text-gray-500 hover:text-white text-2xl font-bold" onclick="closeModal()">&times;</button>
-            
+            <button class="absolute top-4 right-4 text-gray-500 hover:text-white text-2xl font-bold" onclick="closeModal()" aria-label="Cerrar">&times;</button>
+
             <div class="text-center mb-5">
                 <div class="relative inline-block mb-2">
-                    <img id="m-img" src="" class="w-20 h-20 rounded-full border-2 border-yellow-500/80 p-0.5 bg-[#171f30]">
+                    <img id="m-img" src="" class="w-20 h-20 rounded-full border-2 border-yellow-500/80 p-0.5 bg-[#171f30]" alt="">
                 </div>
                 <h2 id="m-name" class="text-2xl font-black tracking-tight text-white mb-0.5"></h2>
                 <div id="m-rank" class="inline-flex items-center gap-1.5 bg-yellow-500/10 border border-yellow-500/30 text-yellow-400 text-[10px] font-black px-3 py-0.5 rounded-full uppercase tracking-wider">
@@ -101,77 +156,80 @@
 
             <div class="mb-5">
                 <p class="text-[9px] font-black text-gray-500 mb-1.5 tracking-widest uppercase">Perfiles Sociales</p>
-                <div id="redes-container" class="grid grid-cols-2 gap-2">
-                </div>
+                <div id="redes-container" class="grid grid-cols-2 gap-2"></div>
             </div>
 
             <div class="mb-2">
                 <p class="text-[9px] font-black text-gray-500 mb-2 tracking-widest uppercase">Estadísticas por Modalidad</p>
-                
+
                 <div class="modal-position-box">
-                    <div id="m-box-bg-gen" class="modal-position-left text-black bg-[#e0a910]">
-                        <span id="m-pos-gen">1.</span>
-                    </div>
+                    <div id="m-box-bg-gen" class="modal-position-left text-black bg-[#e0a910]"><span id="m-pos-gen">1.</span></div>
                     <div class="flex items-center justify-between flex-1 px-4">
                         <span class="text-xs font-black tracking-wider text-gray-200 uppercase">🌍 OVERALL</span>
                         <span id="m-elo-gen" class="text-xs font-bold text-gray-400"></span>
                     </div>
                 </div>
-
                 <div class="modal-position-box">
-                    <div id="m-box-bg-bf" class="modal-position-left text-white bg-red-600">
-                        <span id="m-pos-bf">-</span>
-                    </div>
+                    <div id="m-box-bg-bf" class="modal-position-left text-white bg-red-600"><span id="m-pos-bf">-</span></div>
                     <div class="flex items-center justify-between flex-1 px-4">
                         <span class="text-xs font-black tracking-wider text-gray-200 uppercase">⚔️ BEDFIGHT</span>
                         <span id="m-elo-bf" class="text-xs font-bold text-gray-400"></span>
                     </div>
                 </div>
-
                 <div class="modal-position-box">
-                    <div id="m-box-bg-rk" class="modal-position-left text-white bg-indigo-600">
-                        <span id="m-pos-rk">-</span>
-                    </div>
+                    <div id="m-box-bg-rk" class="modal-position-left text-white bg-indigo-600"><span id="m-pos-rk">-</span></div>
                     <div class="flex items-center justify-between flex-1 px-4">
                         <span class="text-xs font-black tracking-wider text-gray-200 uppercase">🏅 RANKED BW</span>
                         <span id="m-elo-rk" class="text-xs font-bold text-gray-400"></span>
                     </div>
                 </div>
-
                 <div class="modal-position-box">
-                    <div id="m-box-bg-bw" class="modal-position-left text-white bg-emerald-600">
-                        <span id="m-pos-bw">-</span>
-                    </div>
+                    <div id="m-box-bg-bw" class="modal-position-left text-white bg-emerald-600"><span id="m-pos-bw">-</span></div>
                     <div class="flex items-center justify-between flex-1 px-4">
                         <span class="text-xs font-black tracking-wider text-gray-200 uppercase">🛏️ BEDWARS</span>
                         <span id="m-elo-bw" class="text-xs font-bold text-gray-400"></span>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
 
-    <div class="max-w-4xl mx-auto">
-        <div class="flex flex-col sm:flex-row items-center justify-between bg-black p-4 rounded-xl border-2 border-[#ff4d4d] mb-8 gap-4">
-            <div class="flex items-center gap-3">
-                <div class="bg-[#ff4d4d] p-3 rounded shadow-lg"><h1 class="text-2xl font-black italic tracking-tighter text-black">ZTEAM</h1></div>
-                <div>
-                    <h2 class="text-lg font-bold leading-tight">Leaderboard Oficial</h2>
-                    <p class="text-[10px] text-[#ff4d4d] font-black uppercase tracking-widest">Comunidad Competitiva</p>
-                </div>
-            </div>
-            <a href="https://discord.gg/XG8EpJXuXv" target="_blank" class="transition-transform hover:scale-105">
-                <img src="https://cdn-icons-png.flaticon.com/512/3670/3670157.png" alt="Discord" class="w-10 h-10">
-            </a>
+    <!-- ── MODAL DE CRÉDITOS ────────────────────────────────── -->
+    <div id="credits-modal" onclick="closeCredits()">
+        <div class="modal-content text-center" onclick="event.stopPropagation()">
+            <button class="absolute top-4 right-4 text-gray-500 hover:text-white text-2xl font-bold" onclick="closeCredits()" aria-label="Cerrar">&times;</button>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAtCAYAAADsvzj/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAABF9SURBVGhD3ZnZcyPXdca/xtbYFwLcydk1sjSSZUvWxFvZriipVLnykHJVXvLX5K/yQypVqbgqiRwrlkbWSKPZuHNIEMQONNDoBvI7DdIzpChFfot9WV0NNG7fe5bvfOecSycX+9FMfwEjdnb/sx9/okdmchIjTadTxeJdudmYkqmUcsW5PZKJhBzuU1ZMJhPK8JvrppVIJuUHgQIuz/M05ErxzInF1G9PmD+T7/tYNSuFrkZeTJNxtOS3Ht9aESfhyS28QIG4vOFA8XhCqXRamUxW+VxO5WJRLoq4CDULQrkhV8xRAmGdlKvs2Vwvm5HLXfGYGq2mPv/ykZIzRyPmZ/ktmUpoGk7VqI/UOHIUjJNnEnzzuEIRs+mrj2ZK5lpKZXrR05jjaDDoK5PNRcpUKxVlEWoTe94rl/BWTB0UyKGc56Y0xTMhVxIPLKVzakxDvb5Qk8OzAV6YuEnV2y199OCBgmmgGYaY4tLBcKRer69gFFenXuT5XJqvyjcf3+gRZFa6uhMJbMM2cSJFelqoVFUGOguTQNW0qyJWTlSKetbuAqOJ/PE42jJAcAeLJ5IpPJdXdWFB6xtrunv3O1ouljQZDLR/dBQptIeHPv70gULe8Txf8bEvBxgP8creXuoVZb46vlGRQs1ToBOsaYsQF8DE4qPkuqqy6hJWnjgx1WMzhUBjwlXOFZRLuvL8sUWUZsyfIpiPVkPemWDtTCqpLEZYXlnVd+/d01trG8CspUf1FyoUivrt7z9Sr9nW9+KuYrz/315frZ6r48Ov56avVWQWG2j52lh9YBSPE5h4Iu6Y8Cn9fW1R7clEH3Y78k2BRFzJTEYZJ64yguQKea0yx+IG82pC5PrMD4BSA+v32h3NgOOY+Q7ezDPvrbffjlATnLaAclaPHj9W96iucThRfTxSnH13t+PyvTk6Lg8U+TGKmC7n2JvfS6uHkSuDMIBd4gRtXDWw/08rK5ph0V+fnKg78dWbSgkIoEas3Fpc1kqtqjHea/X7anfamhL4obEc7xpTpWCxkpvR04NdeSNfeb6vrK1ieam2UNE7a5sqER+/HfX05daWDthnAFST7N/thjrey1yQ8/x+tUdiE73zflYv6nXiYRA9qmLB+whQx0IdBNptnioOG+WByDrWXwDvU6zbInCnxIk7HOrFLFCMuLD9uuA9xKsu79Yggmo+r6A/0MnIUxpr37p1S8V0RqNeT2/cuql+t69jkPS7zx4Cqw6IMFgHOnyWB64m/MURTznX/nn+8fxHR7HkQIsraY0JWB+sF7DmJr9UEHwn7ugFm/TICRWsuVoqRgK0ZqFKhZJWCPo7mZyura1ruVrTlLiaEFPFchl4QKUINAJuXWCZwdIzf6IGnm32e7q1vq4Uezzf21UGz64wLyzmtXNwEDGZxWHgxxROXoXXXO4rPZLKNbV6LQPbzNRoNPRBpawuGzWx+MkkBNukLphshdhwiY0e8CuAf9/iCcHzrFhyElqOYWliZnG5Jn9zVc+Bzx4KdAn+YTBV3Ejg8VMdzCZyimUtoezfvfu+Pnn0OTEa03tLy/oSVHwBS37x9CmxBotNKhq28fKlcckj8yvmNkl2c02LCPgL4PElX5vjCTEx03fKVaWAWCCoESu5QOQmeSRBLDQCX5vJtL6fLuh7lQWEy0cJdOfploLjYxKqIw9PP37yRP1eV9WlRTl42MPrE5QrkBTfunFLHz38TB6wXcPzHeQ4Za7F2gwqn3gWJ3P5zu8osnGmyCsj1uSyzBzX20z8uN+Vk83q2Bvqb6BMj/sQyJ2ilFHtIl7xEbCTJq8gfLK8oN2sq98lY/pXYuY3w77K77+nPZY2WBmN37p9J5LB4a9EIq2Wylqo1dQbDKNcMxiNtLu3DyQLWh2M1M2k1Oz0IA9ThMrg0rgyRhLZuuKUG/HRWDVg0s9ndQKTfLBY0wjrHo6GagK7KbToY8lGp0USnKoP5qdAr0UtFYL9cj6noFjQKXRbI5Z29neVA5JNDHHabiuOtz3e6SD0IeRhdVsCmq4QH3ng+2D7ObSe1QjIWunVwZP8fKbIRY/AC+ch8vJuAW7c+wssc6JQCdjmtUxaVT/QPiwGUpWEVlPMMUotpLPaqNT05sqGalDwAoxU3T5Sp9lSk0RnFYIlx/XlFZWx+hubN+Q+2lam2dMa792sLqG04X6mradfaoixCihQhiSO68eqED8llF2EnpPpYC7mJbnPPGJavbymzkHE9SmocQgzuTxdT+BaCromzxpgdZHcYRk7BF5JFK9DkbvNBrhOaNLqKDS6vXtTBwf70aoxcs/jJ4+1/eJALhZf3m+oUYWR2qc63N8RGZP8lNKwCdFsbMhl/Rne3cJTY2AbJ+d4QLc39OR1cxfktevMIxcvK0dSCLucysBC8aisyIP7PQKuAawqbJL1Ripa1dpta8wqIxjMwYqL+ZIqTYq9jWUd7R8oBkStrj8+PFQiV1RIsekDSUrcqEh0ib0UGT5LNm9sPafIpOQHcibJjdVlRUSLkhmKzARQt6L1KpkR4aJmdlnyWYbPc9Ct1UppWOsEBYyCHTB+Bxj8bJUMT+mRo8L1eCvknWKpInd7j7wD18NWbRQ3JRK8E4shCELaDtaXvJYqqI/AA1iva2UOhslxT5F4eyRTH+EDoLlWrpBz2tqghtvAcAUUno+LMl/pESs5ymz+CSVGyGa3V1fVBatThPWZ8YhA/RAqHbGGCeETL7ZeBaVrnb6G68tgux71H1X6kEoiqTQ7Bf4oKgLN4tZzJPkcWnLk3qSkKeKZOBbvjj3FyU19FFqFngfA6njqq4ZXLE/Nx0WZr/SI1VVTcB9YJmaT7DigFKESRehZtJEvCFmhwQ7LGYXmye6/HMa0kMrqFDwEEENoXaFh3+bybsCaZpgpn78IWkoHVMPAbIrQlpNYPeoaHZ6fkIitxtq8RqdD7OwTG8d4JjQiYr3L15UesU7vFljOsmgKDI+hvwYwMv6fIZwDvmdYJwYRFFAgz+elcKbsaU9Hi0UdHb2ApvtYPNAYwXt87kESHvAxvIcIWMa7a8DNRgoKt0rhLaXg1kBD9hqi4CG0HoMZlyCHPqx1l1zDy3+U89XrSo+Y8553OlSc9gmoEciHlAlR340164OuYkAmDXQmPItR9P2MhqNfcPWFM6Hz87AvVTECwj1RTz5AiRnxQgMZ3e+7S5Q42Qgqb0AC5YSra1QEXZQYI/TYmBCh8/lCNCeDaCfdHnRvHHq1zAzT6uXdeozblOUu4pjbPWIAW9KXxKP3rA/PUsEW8ZqLEgHWdoHfv7iBenR5DlhPkwPixkZ419aw7exlC3zrbVYJ3lZIF8laB0lig/mfUy2ziVy8cgJRpCCZxc0NDVHAep07pZJCGHUu5/llI/KIjfk253efjX99ekQsTBQjmzaY2KGGssSYYqNMitxisEIZKxpf73hqw/WjAnQN6xhUrCB0yANJsruV35F3EvY+jIahPmkeUjiCd2IwoBgcEOxbM3IP3ovz3SrvEiwYWAWMh4oY5Gm7CWWbInMvvCr3Kx55qWGIB4oIW0DwGRZsUCC63IcIF3kDWnYIwAHWcdnk5+6CerUKWQ/cr6zr7u27un3rNWUWygqBpe1nW7ooaz28VQ2Pwr52Jl4E35jFHJAK6dtDvofUIWP2/uCnP9Xzjz9RBuE7ZPvf46URMXdZXru/4pGXGk5wcQ7IvOfmoqBuHx9pjf6C1lxJgjoBnVrb+oIsXB6OtRUM9Hp/rL990VdmZ1/1Z880evJU4bPntKbzczDkgiToPDGQ5ZanoYdwQ+WBS2GG8HiszTyX3wwR7737bhQX9d3dSNzdbkt2jmOHGpfltTslyiYlik21h/N74OzLw2oldu8DhRkZNWGYt6IObzk8y1Ky3Lh5UyOs92w60pNCWo+TWA7Fs/TgSYpFUVf5sFNAkYh8cvkcQQmhc4WCfJJbk5iKQedx6jWD75qbVXF5WT/64Y91/IeHOnj6WB0Q8cvqsh5CIl1kCcYLF+S1+5kiLzWzkUyeRPc14sADr3bU4+IBn4y+lM1HiWoMr98DQm0gcYqgPbL+0A4YgIlZrUnpPwN2cTAOTSmHEmZhYzA7YekRW3Y3GiZhk2ihb2D1g7fu6c2/+qGefvQ/SpJL9qDgGXHZZ58d0DDFuP4QGEfjpdxXstYIywzg8T+QYX9CgzQB25tsmCOj1wnQ69dv0Oa6Om3Udc+ggkUnbAaA2IgF2CzOUha4I3CdIV8U425EsRko1gSfUDUsxZKR8JYIDU7/+A+/Ug4If/rvv1G1P1L96BCYT/UuhtxDaWO2MjXfZXntfqVHZoZGB3cTJz2g0CCBbWDB68SGh5VP8ECFLq7E9w0gZln9YDA/IDDOnyCUnQIX4PzAYMiyG2SUX60uRczjgbMMa5d4r4fS79y/r+++f1/PHj9W6/m20sAn3jhhzQH9fiKKy4coYmlhRPXge1b92ngp95kiF8fUAVoxSgs2tJORzpDOjAxvp7BrmVxUPA56fT1BKIPb9ZU1tWEV66lthChih3UWwGkUiyLdIIURGmwao0K+fuOG7r77fW3eeU272zvqbG2rc9pQl8SbpnX+qN/SkB6oBhFsEyN2QGGMNfbwX0iG/6MS83F2rnVxBM421ewxVJtQCUHt2NIhyO/SGHl22kEmfnB6ogV6lhjuHs5CZfmtSJCnqc9SkIIx3BRP2oYu33NYv0TemeAhO/dq1k8o27foEpmDtY8QdIHazWrbTzpNLZJs14BUAfT/B4YcU0GMMc5ktEIXaopcHJcO6OZjqrrC+A5pIR4lwGoRCwJ+E8JB8AkC5vjthBiy3j1HPK/ni/KwfAFFRiiWhoUWrWWFmVx+j2HNGVez78lBoBc0VCPWs7Z3iKEWiZ0Ca346oHTHUFmMeBfofugPtE88WVUxZl44XkfAc9Y6H1+JkfNBwksYCIABC5hH7GxqlSjtk6XzxIXHnQwRlQyW5UcW2Cg1snIFwZdJoDcRbBVoLVgFDKzsXw4nQGePbtKOkOwU0+A7ckho2YwaZO9V4irH/X4hr/9k3oFRN3tZTWfzNd1EqlfPtWwg6VXQMg1n7qcRpVFVRCeBLtZZYLPbYHYXBYySt2htBwhvQV5C8NfprQ/Z/Ca/WQMW0N5G/+RBAWuJB1BolwbNDLRJvjiA0XooQSUI7ull8GKa3/4aZvo34PWQYB/BnlaWTDGY3Z3xO3MRL42vUQRVnD59wHNl7BCO74lEjOQXRKeHP0+SyFD2kOTXarVUB2IWzFbSbEDHTb7bqaSd1w6h7lMsaWdSKRReRME3geEBAu5hbY9gygGjNF5OESfXMwXtzibagjwMSnY6aUdIVnWPemvEB3R/xfhaRSKvxA+UdekJ+JyJJ0l4fnRqsrpQ0w8SGZKc9BmC+AjSap6qg8VjWL4KNPJAqk0sBZYMET4LRMvEgZX1A95rWREK5PJ40c4BEn6I8inRh6rJOtYyWHtglfPIAn1cptlbPZPtq+MbFLExoxx/TqYfA60UtEo3aMmOy/4jdTtX0ipWM1psZFzKEftXGd0jjdTAoyfBSzgkmp+lDLeTkeV0DkakMwSqPkouYe1jWuA283oob5afANcEStmhh/07wvdT9Cg3kIdJXzP+D0VszFCkrUq+GcHLCsDoqbndLE2euYNwaUr+ClDaNUtnrUGCoYCPHalWmWfFoFXQAUpcA3YrxMg2gT8jPz2AwfpAyQSxfzvY3UfBKZ88r4gSy9Ge3zS+hSI2sGzc02LpMGp3TRmznLndTs8ti2cJcCvxryFImRWvAbcd6qT/IuP/pLgQlTTWcH1MFWv/VjjCWx3eH1idhhLmJUucORou86QFdre7Dgq+ejx61fiWiswH3UmU8d2YWW8INUOpDtZOjYABSZH4WTSLAqEMCsbJ7La40XcQwWzej4whjTY0PeL5OMhEuQiJIRhgNyNHgKAw+HYKnI8/SZH/z+Os+v3zH38hikj/C67zNmWpI1kKAAAAAElFTkSuQmCC" class="w-16 h-16 rounded-full mx-auto mb-4" alt="zTeam">
+            <p class="text-[9px] font-black text-gray-500 mb-1 tracking-widest uppercase">Creador y Desarrollador</p>
+            <h2 class="text-2xl font-black tracking-tight text-white mb-2">4Trueno</h2>
+            <p class="text-gray-400 text-sm">Diseñó y programó el bot de tiers de zTeam y esta página de leaderboard.</p>
         </div>
+    </div>
 
-        <div class="mb-6">
-            <div class="grid grid-cols-2 sm:grid-cols-4 gap-1.5 bg-[#111723] p-1.5 rounded-lg border border-gray-800">
-                <button onclick="changeMode('general')" id="btn-general" class="py-2 px-3 rounded text-xs font-black uppercase tracking-wider transition bg-[#ff4d4d] text-black">🌍 General</button>
-                <button onclick="changeMode('bedfight')" id="btn-bedfight" class="py-2 px-3 rounded text-xs font-black uppercase tracking-wider transition hover:bg-gray-800 text-gray-400">⚔️ Bedfight</button>
-                <button onclick="changeMode('ranked')" id="btn-ranked" class="py-2 px-3 rounded text-xs font-black uppercase tracking-wider transition hover:bg-gray-800 text-gray-400">🏅 Ranked BW</button>
-                <button onclick="changeMode('bedwars')" id="btn-bedwars" class="py-2 px-3 rounded text-xs font-black uppercase tracking-wider transition hover:bg-gray-800 text-gray-400">🛏️ Bedwars</button>
+    <!-- ── NAVBAR ───────────────────────────────────────────── -->
+    <nav class="zt-nav sticky top-0 z-40">
+        <div class="max-w-5xl mx-auto px-4 md:px-6 py-3 flex items-center justify-between gap-4 flex-wrap">
+            <div class="flex items-center gap-2.5">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAtCAYAAADsvzj/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAABF9SURBVGhD3ZnZcyPXdca/xtbYFwLcydk1sjSSZUvWxFvZriipVLnykHJVXvLX5K/yQypVqbgqiRwrlkbWSKPZuHNIEMQONNDoBvI7DdIzpChFfot9WV0NNG7fe5bvfOecSycX+9FMfwEjdnb/sx9/okdmchIjTadTxeJdudmYkqmUcsW5PZKJhBzuU1ZMJhPK8JvrppVIJuUHgQIuz/M05ErxzInF1G9PmD+T7/tYNSuFrkZeTJNxtOS3Ht9aESfhyS28QIG4vOFA8XhCqXRamUxW+VxO5WJRLoq4CDULQrkhV8xRAmGdlKvs2Vwvm5HLXfGYGq2mPv/ykZIzRyPmZ/ktmUpoGk7VqI/UOHIUjJNnEnzzuEIRs+mrj2ZK5lpKZXrR05jjaDDoK5PNRcpUKxVlEWoTe94rl/BWTB0UyKGc56Y0xTMhVxIPLKVzakxDvb5Qk8OzAV6YuEnV2y199OCBgmmgGYaY4tLBcKRer69gFFenXuT5XJqvyjcf3+gRZFa6uhMJbMM2cSJFelqoVFUGOguTQNW0qyJWTlSKetbuAqOJ/PE42jJAcAeLJ5IpPJdXdWFB6xtrunv3O1ouljQZDLR/dBQptIeHPv70gULe8Txf8bEvBxgP8creXuoVZb46vlGRQs1ToBOsaYsQF8DE4qPkuqqy6hJWnjgx1WMzhUBjwlXOFZRLuvL8sUWUZsyfIpiPVkPemWDtTCqpLEZYXlnVd+/d01trG8CspUf1FyoUivrt7z9Sr9nW9+KuYrz/315frZ6r48Ov56avVWQWG2j52lh9YBSPE5h4Iu6Y8Cn9fW1R7clEH3Y78k2BRFzJTEYZJ64yguQKea0yx+IG82pC5PrMD4BSA+v32h3NgOOY+Q7ezDPvrbffjlATnLaAclaPHj9W96iucThRfTxSnH13t+PyvTk6Lg8U+TGKmC7n2JvfS6uHkSuDMIBd4gRtXDWw/08rK5ph0V+fnKg78dWbSgkIoEas3Fpc1kqtqjHea/X7anfamhL4obEc7xpTpWCxkpvR04NdeSNfeb6vrK1ieam2UNE7a5sqER+/HfX05daWDthnAFST7N/thjrey1yQ8/x+tUdiE73zflYv6nXiYRA9qmLB+whQx0IdBNptnioOG+WByDrWXwDvU6zbInCnxIk7HOrFLFCMuLD9uuA9xKsu79Yggmo+r6A/0MnIUxpr37p1S8V0RqNeT2/cuql+t69jkPS7zx4Cqw6IMFgHOnyWB64m/MURTznX/nn+8fxHR7HkQIsraY0JWB+sF7DmJr9UEHwn7ugFm/TICRWsuVoqRgK0ZqFKhZJWCPo7mZyura1ruVrTlLiaEFPFchl4QKUINAJuXWCZwdIzf6IGnm32e7q1vq4Uezzf21UGz64wLyzmtXNwEDGZxWHgxxROXoXXXO4rPZLKNbV6LQPbzNRoNPRBpawuGzWx+MkkBNukLphshdhwiY0e8CuAf9/iCcHzrFhyElqOYWliZnG5Jn9zVc+Bzx4KdAn+YTBV3Ejg8VMdzCZyimUtoezfvfu+Pnn0OTEa03tLy/oSVHwBS37x9CmxBotNKhq28fKlcckj8yvmNkl2c02LCPgL4PElX5vjCTEx03fKVaWAWCCoESu5QOQmeSRBLDQCX5vJtL6fLuh7lQWEy0cJdOfploLjYxKqIw9PP37yRP1eV9WlRTl42MPrE5QrkBTfunFLHz38TB6wXcPzHeQ4Za7F2gwqn3gWJ3P5zu8osnGmyCsj1uSyzBzX20z8uN+Vk83q2Bvqb6BMj/sQyJ2ilFHtIl7xEbCTJq8gfLK8oN2sq98lY/pXYuY3w77K77+nPZY2WBmN37p9J5LB4a9EIq2Wylqo1dQbDKNcMxiNtLu3DyQLWh2M1M2k1Oz0IA9ThMrg0rgyRhLZuuKUG/HRWDVg0s9ndQKTfLBY0wjrHo6GagK7KbToY8lGp0USnKoP5qdAr0UtFYL9cj6noFjQKXRbI5Z29neVA5JNDHHabiuOtz3e6SD0IeRhdVsCmq4QH3ng+2D7ObSe1QjIWunVwZP8fKbIRY/AC+ch8vJuAW7c+wssc6JQCdjmtUxaVT/QPiwGUpWEVlPMMUotpLPaqNT05sqGalDwAoxU3T5Sp9lSk0RnFYIlx/XlFZWx+hubN+Q+2lam2dMa792sLqG04X6mradfaoixCihQhiSO68eqED8llF2EnpPpYC7mJbnPPGJavbymzkHE9SmocQgzuTxdT+BaCromzxpgdZHcYRk7BF5JFK9DkbvNBrhOaNLqKDS6vXtTBwf70aoxcs/jJ4+1/eJALhZf3m+oUYWR2qc63N8RGZP8lNKwCdFsbMhl/Rne3cJTY2AbJ+d4QLc39OR1cxfktevMIxcvK0dSCLucysBC8aisyIP7PQKuAawqbJL1Ripa1dpta8wqIxjMwYqL+ZIqTYq9jWUd7R8oBkStrj8+PFQiV1RIsekDSUrcqEh0ib0UGT5LNm9sPafIpOQHcibJjdVlRUSLkhmKzARQt6L1KpkR4aJmdlnyWYbPc9Ct1UppWOsEBYyCHTB+Bxj8bJUMT+mRo8L1eCvknWKpInd7j7wD18NWbRQ3JRK8E4shCELaDtaXvJYqqI/AA1iva2UOhslxT5F4eyRTH+EDoLlWrpBz2tqghtvAcAUUno+LMl/pESs5ymz+CSVGyGa3V1fVBatThPWZ8YhA/RAqHbGGCeETL7ZeBaVrnb6G68tgux71H1X6kEoiqTQ7Bf4oKgLN4tZzJPkcWnLk3qSkKeKZOBbvjj3FyU19FFqFngfA6njqq4ZXLE/Nx0WZr/SI1VVTcB9YJmaT7DigFKESRehZtJEvCFmhwQ7LGYXmye6/HMa0kMrqFDwEEENoXaFh3+bybsCaZpgpn78IWkoHVMPAbIrQlpNYPeoaHZ6fkIitxtq8RqdD7OwTG8d4JjQiYr3L15UesU7vFljOsmgKDI+hvwYwMv6fIZwDvmdYJwYRFFAgz+elcKbsaU9Hi0UdHb2ApvtYPNAYwXt87kESHvAxvIcIWMa7a8DNRgoKt0rhLaXg1kBD9hqi4CG0HoMZlyCHPqx1l1zDy3+U89XrSo+Y8553OlSc9gmoEciHlAlR340164OuYkAmDXQmPItR9P2MhqNfcPWFM6Hz87AvVTECwj1RTz5AiRnxQgMZ3e+7S5Q42Qgqb0AC5YSra1QEXZQYI/TYmBCh8/lCNCeDaCfdHnRvHHq1zAzT6uXdeozblOUu4pjbPWIAW9KXxKP3rA/PUsEW8ZqLEgHWdoHfv7iBenR5DlhPkwPixkZ419aw7exlC3zrbVYJ3lZIF8laB0lig/mfUy2ziVy8cgJRpCCZxc0NDVHAep07pZJCGHUu5/llI/KIjfk253efjX99ekQsTBQjmzaY2KGGssSYYqNMitxisEIZKxpf73hqw/WjAnQN6xhUrCB0yANJsruV35F3EvY+jIahPmkeUjiCd2IwoBgcEOxbM3IP3ovz3SrvEiwYWAWMh4oY5Gm7CWWbInMvvCr3Kx55qWGIB4oIW0DwGRZsUCC63IcIF3kDWnYIwAHWcdnk5+6CerUKWQ/cr6zr7u27un3rNWUWygqBpe1nW7ooaz28VQ2Pwr52Jl4E35jFHJAK6dtDvofUIWP2/uCnP9Xzjz9RBuE7ZPvf46URMXdZXru/4pGXGk5wcQ7IvOfmoqBuHx9pjf6C1lxJgjoBnVrb+oIsXB6OtRUM9Hp/rL990VdmZ1/1Z880evJU4bPntKbzczDkgiToPDGQ5ZanoYdwQ+WBS2GG8HiszTyX3wwR7737bhQX9d3dSNzdbkt2jmOHGpfltTslyiYlik21h/N74OzLw2oldu8DhRkZNWGYt6IObzk8y1Ky3Lh5UyOs92w60pNCWo+TWA7Fs/TgSYpFUVf5sFNAkYh8cvkcQQmhc4WCfJJbk5iKQedx6jWD75qbVXF5WT/64Y91/IeHOnj6WB0Q8cvqsh5CIl1kCcYLF+S1+5kiLzWzkUyeRPc14sADr3bU4+IBn4y+lM1HiWoMr98DQm0gcYqgPbL+0A4YgIlZrUnpPwN2cTAOTSmHEmZhYzA7YekRW3Y3GiZhk2ihb2D1g7fu6c2/+qGefvQ/SpJL9qDgGXHZZ58d0DDFuP4QGEfjpdxXstYIywzg8T+QYX9CgzQB25tsmCOj1wnQ69dv0Oa6Om3Udc+ggkUnbAaA2IgF2CzOUha4I3CdIV8U425EsRko1gSfUDUsxZKR8JYIDU7/+A+/Ug4If/rvv1G1P1L96BCYT/UuhtxDaWO2MjXfZXntfqVHZoZGB3cTJz2g0CCBbWDB68SGh5VP8ECFLq7E9w0gZln9YDA/IDDOnyCUnQIX4PzAYMiyG2SUX60uRczjgbMMa5d4r4fS79y/r+++f1/PHj9W6/m20sAn3jhhzQH9fiKKy4coYmlhRPXge1b92ngp95kiF8fUAVoxSgs2tJORzpDOjAxvp7BrmVxUPA56fT1BKIPb9ZU1tWEV66lthChih3UWwGkUiyLdIIURGmwao0K+fuOG7r77fW3eeU272zvqbG2rc9pQl8SbpnX+qN/SkB6oBhFsEyN2QGGMNfbwX0iG/6MS83F2rnVxBM421ewxVJtQCUHt2NIhyO/SGHl22kEmfnB6ogV6lhjuHs5CZfmtSJCnqc9SkIIx3BRP2oYu33NYv0TemeAhO/dq1k8o27foEpmDtY8QdIHazWrbTzpNLZJs14BUAfT/B4YcU0GMMc5ktEIXaopcHJcO6OZjqrrC+A5pIR4lwGoRCwJ+E8JB8AkC5vjthBiy3j1HPK/ni/KwfAFFRiiWhoUWrWWFmVx+j2HNGVez78lBoBc0VCPWs7Z3iKEWiZ0Ca346oHTHUFmMeBfofugPtE88WVUxZl44XkfAc9Y6H1+JkfNBwksYCIABC5hH7GxqlSjtk6XzxIXHnQwRlQyW5UcW2Cg1snIFwZdJoDcRbBVoLVgFDKzsXw4nQGePbtKOkOwU0+A7ckho2YwaZO9V4irH/X4hr/9k3oFRN3tZTWfzNd1EqlfPtWwg6VXQMg1n7qcRpVFVRCeBLtZZYLPbYHYXBYySt2htBwhvQV5C8NfprQ/Z/Ca/WQMW0N5G/+RBAWuJB1BolwbNDLRJvjiA0XooQSUI7ull8GKa3/4aZvo34PWQYB/BnlaWTDGY3Z3xO3MRL42vUQRVnD59wHNl7BCO74lEjOQXRKeHP0+SyFD2kOTXarVUB2IWzFbSbEDHTb7bqaSd1w6h7lMsaWdSKRReRME3geEBAu5hbY9gygGjNF5OESfXMwXtzibagjwMSnY6aUdIVnWPemvEB3R/xfhaRSKvxA+UdekJ+JyJJ0l4fnRqsrpQ0w8SGZKc9BmC+AjSap6qg8VjWL4KNPJAqk0sBZYMET4LRMvEgZX1A95rWREK5PJ40c4BEn6I8inRh6rJOtYyWHtglfPIAn1cptlbPZPtq+MbFLExoxx/TqYfA60UtEo3aMmOy/4jdTtX0ipWM1psZFzKEftXGd0jjdTAoyfBSzgkmp+lDLeTkeV0DkakMwSqPkouYe1jWuA283oob5afANcEStmhh/07wvdT9Cg3kIdJXzP+D0VszFCkrUq+GcHLCsDoqbndLE2euYNwaUr+ClDaNUtnrUGCoYCPHalWmWfFoFXQAUpcA3YrxMg2gT8jPz2AwfpAyQSxfzvY3UfBKZ88r4gSy9Ge3zS+hSI2sGzc02LpMGp3TRmznLndTs8ti2cJcCvxryFImRWvAbcd6qT/IuP/pLgQlTTWcH1MFWv/VjjCWx3eH1idhhLmJUucORou86QFdre7Dgq+ejx61fiWiswH3UmU8d2YWW8INUOpDtZOjYABSZH4WTSLAqEMCsbJ7La40XcQwWzej4whjTY0PeL5OMhEuQiJIRhgNyNHgKAw+HYKnI8/SZH/z+Os+v3zH38hikj/C67zNmWpI1kKAAAAAElFTkSuQmCC" class="zt-logo-emblem" alt="zTeam">
+                <span class="text-xl font-black italic tracking-tighter text-white">Z<span class="text-[#ff4d4d]">TEAM</span></span>
+            </div>
+            <div class="flex items-center gap-1 flex-wrap">
+                <a href="#" class="zt-navlink"><span>🏠</span> Home</a>
+                <a href="#leaderboard-top" class="zt-navlink active"><span>🏆</span> Rankings</a>
+                <a href="https://discord.gg/XG8EpJXuXv" target="_blank" class="zt-navlink"><span>💬</span> Discords</a>
+                <button onclick="openCredits()" class="zt-navlink"><span>👤</span> Creador y Desarrollador</button>
+            </div>
+            <input type="text" id="search-input" class="zt-search" placeholder="Buscar jugador..." oninput="onSearchInput(this.value)">
+        </div>
+    </nav>
+
+    <div class="max-w-5xl mx-auto px-4 md:px-6 pt-6 pb-16">
+
+        <div id="leaderboard-top" class="mb-5">
+            <div class="flex gap-1 border-b border-gray-800 overflow-x-auto">
+                <button onclick="changeMode('general')" id="btn-general" class="mode-tab active"><span>🌍</span>General</button>
+                <button onclick="changeMode('bedfight')" id="btn-bedfight" class="mode-tab"><span>⚔️</span>Bedfight</button>
+                <button onclick="changeMode('ranked')" id="btn-ranked" class="mode-tab"><span>🏅</span>Ranked BW</button>
+                <button onclick="changeMode('bedwars')" id="btn-bedwars" class="mode-tab"><span>🛏️</span>Bedwars</button>
             </div>
         </div>
 
@@ -182,37 +240,57 @@
         const CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTlfD0FvQ-kVK2leat4n9qOvfu3zJ8rlv-B8qm9434NOMGCV4pOyw7B-cchbzFCpKCVSOGFhCI0YST_/pub?output=csv';
         const DISCORD_INVITE = "https://discord.gg/XG8EpJXuXv";
 
-        
         const LOGO_TIKTOK = "https://i.ibb.co/VWTg69wG/tiktok.png";
         const LOGO_INSTAGRAM = "https://i.ibb.co/6R4ZgpyQ/instagram.png";
         const LOGO_BEDFIGHT = "https://i.ibb.co/M5yGmfXd/bedfight.png";
         const LOGO_BEDWARS = "https://i.ibb.co/YFrcLPKp/bedwars.png";
-        const LOGO_RBW = "https://i.ibb.co/v4S8Q3W/ender_icon.png"; // 
+        const LOGO_RBW = "https://i.ibb.co/v4S8Q3W/ender_icon.png";
 
         let globalPlayersData = [];
         let currentMode = 'general';
+        let searchTerm = '';
 
-        // ASIGNACIÓN CORRECTA DE COLORES DE LA PALETA MCTIERS
         function getTierStyleClass(tier) {
-            if (!tier || tier.trim() === "" || tier.trim() === "-") return "tier-none";
-            let t = tier.trim().toUpperCase();
-            if (t.includes("S+")) return "tier-s-plus";
-            if (t.includes("S")) return "tier-s";
-            if (t.includes("A+")) return "tier-a-plus";
-            if (t.includes("A")) return "tier-a";
-            return "tier-none";
+            if (!tier) return "tier-none";
+            const t = tier.trim().toUpperCase();
+            switch (t) {
+                case "Z": return "tier-z";
+                case "S+": return "tier-z";
+                case "S": return "tier-s";
+                case "A+": return "tier-a-plus";
+                case "A-": return "tier-a-minus";
+                case "B+": return "tier-b-plus";
+                case "B": return "tier-b";
+                default: return "tier-none";
+            }
+        }
+
+        const REGION_STYLES = {
+            NA: ["#3f1d1d", "#ff8080"], EU: ["#173a20", "#4ade80"], LATAM: ["#3f2f10", "#fbbf24"],
+            AS: ["#16233a", "#60a5fa"], OCE: ["#2a1d3f", "#c084fc"], SA: ["#3f2010", "#fb923c"],
+            AF: ["#0f2f28", "#2dd4bf"],
+        };
+        function regionChipHTML(region) {
+            const r = (region || "").trim().toUpperCase();
+            const [bg, fg] = REGION_STYLES[r] || ["#1f2937", "#9ca3af"];
+            return `<span class="region-chip" style="background:${bg};color:${fg}">${r || "—"}</span>`;
         }
 
         function changeMode(mode) {
             currentMode = mode;
             ['general', 'bedfight', 'ranked', 'bedwars'].forEach(m => {
-                const btn = document.getElementById(`btn-${m}`);
-                btn.className = (m === mode) 
-                    ? "py-2 px-3 rounded text-xs font-black uppercase tracking-wider transition bg-[#ff4d4d] text-black"
-                    : "py-2 px-3 rounded text-xs font-black uppercase tracking-wider transition hover:bg-gray-800 text-gray-400";
+                document.getElementById(`btn-${m}`).classList.toggle('active', m === mode);
             });
             renderLeaderboard();
         }
+
+        function onSearchInput(value) {
+            searchTerm = value.trim().toLowerCase();
+            renderLeaderboard();
+        }
+
+        function openCredits() { document.getElementById('credits-modal').style.display = 'flex'; }
+        function closeCredits() { document.getElementById('credits-modal').style.display = 'none'; }
 
         function loadData() {
             Papa.parse(CSV_URL, {
@@ -249,11 +327,18 @@
             const container = document.getElementById('leaderboard');
             container.innerHTML = '';
 
+            if (globalPlayersData.length === 0) {
+                container.innerHTML = `
+                    <div class="text-center py-14 border border-dashed border-gray-800 rounded-lg">
+                        <p class="text-gray-500 text-sm font-bold">Todavía no hay jugadores en la tierlist.</p>
+                    </div>`;
+                return;
+            }
+
             let sortedPlayers = globalPlayersData.map(p => {
                 let bfPts = parseInt(p.bedfightpuntos || 0);
                 let rkPts = parseInt(p.rankedpuntos || 0);
                 let bwPts = parseInt(p.bedwarspuntos || 0);
-                
                 if (isNaN(bfPts)) bfPts = 0;
                 if (isNaN(rkPts)) rkPts = 0;
                 if (isNaN(bwPts)) bwPts = 0;
@@ -269,45 +354,63 @@
                 return { ...p, bfPts, rkPts, bwPts, totalPts, targetPts, targetTier };
             });
 
+            if (searchTerm) {
+                sortedPlayers = sortedPlayers.filter(p => (p.jugador || "").toLowerCase().includes(searchTerm));
+            }
+
             sortedPlayers.sort((a, b) => b.targetPts - a.targetPts);
+
+            if (sortedPlayers.length === 0) {
+                container.innerHTML = `
+                    <div class="text-center py-14 border border-dashed border-gray-800 rounded-lg">
+                        <p class="text-gray-500 text-sm font-bold">No encontré ningún jugador con ese nombre.</p>
+                    </div>`;
+                return;
+            }
 
             sortedPlayers.forEach((p, index) => {
                 let rank = index + 1;
                 let cleanUUID = p.uuid.replace(/-/g, "").trim();
-                
+
                 let rankZoneClass = "bg-normal-rank";
                 let podiumCardClass = "";
-                if (rank === 1) { rankZoneClass = "bg-top1"; podiumCardClass = "podium-glow border-yellow-600/50"; }
-                else if (rank === 2) { rankZoneClass = "bg-top2"; podiumCardClass = "podium-glow border-slate-500/50"; }
-                else if (rank === 3) { rankZoneClass = "bg-top3"; podiumCardClass = "podium-glow border-amber-800/50"; }
+                let medal = "";
+                if (rank === 1) { rankZoneClass = "bg-top1"; podiumCardClass = "podium-glow border-yellow-600/50"; medal = "🥇"; }
+                else if (rank === 2) { rankZoneClass = "bg-top2"; podiumCardClass = "podium-glow border-slate-500/50"; medal = "🥈"; }
+                else if (rank === 3) { rankZoneClass = "bg-top3"; podiumCardClass = "podium-glow border-amber-800/50"; medal = "🥉"; }
 
                 let rankNumColor = rank <= 3 ? "text-white" : "text-gray-400";
                 let pString = encodeURIComponent(JSON.stringify(p));
 
                 let rankTitle = "Combat Ace";
-                if(p.targetPts >= 250) rankTitle = "Combat Master";
-                if(p.targetPts >= 500) rankTitle = "Combat Sorcerer";
+                if (p.targetPts >= 250) rankTitle = "Combat Master";
+                if (p.targetPts >= 500) rankTitle = "Combat Sorcerer";
 
+                let classGen = getTierStyleClass(p.tier);
                 let classBf = getTierStyleClass(p.bedfighttier);
                 let classRk = getTierStyleClass(p.rankedtier);
                 let classBw = getTierStyleClass(p.bedwarstier);
 
+                let labelGen = (p.tier && p.tier.trim() !== "") ? p.tier : "-";
                 let labelBf = (p.bedfighttier && p.bedfighttier.trim() !== "") ? p.bedfighttier : "-";
                 let labelRk = (p.rankedtier && p.rankedtier.trim() !== "") ? p.rankedtier : "-";
                 let labelBw = (p.bedwarstier && p.bedwarstier.trim() !== "") ? p.bedwarstier : "-";
 
                 container.innerHTML += `
-                    <div class="player-card ${podiumCardClass}" onclick="openModal('${pString}', '${cleanUUID}', '${rankTitle}')">
+                    <div class="player-card ${podiumCardClass}" role="button" tabindex="0"
+                         onclick="openModal('${pString}', '${cleanUUID}', '${rankTitle}')"
+                         onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openModal('${pString}', '${cleanUUID}', '${rankTitle}')}">
                         <div class="flex items-center h-full">
                             <div class="rank-badge-zone ${rankZoneClass}">
+                                ${medal ? `<span class="medal-icon">${medal}</span>` : ""}
                                 <span class="rank-num-text ${rankNumColor}">${rank}</span>
                                 <div class="avatar-inside-rank">
-                                    <img src="https://visage.surgeplay.com/bust/64/${cleanUUID}" onerror="this.src='https://visage.surgeplay.com/bust/64/steve'">
+                                    <img src="https://visage.surgeplay.com/bust/96/${cleanUUID}" onerror="this.src='https://visage.surgeplay.com/bust/96/steve'" alt="">
                                 </div>
                             </div>
-                            
-                            <div class="ml-4">
-                                <div class="font-black uppercase italic text-sm text-gray-100">${p.jugador}</div>
+
+                            <div class="ml-4 min-w-0">
+                                <div class="player-name font-black uppercase italic text-sm text-gray-100">${p.jugador}</div>
                                 <div class="flex items-center gap-1.5 mt-0.5">
                                     <span class="text-[9px] text-gray-400 font-bold uppercase">${rankTitle}</span>
                                     <span class="text-[9px] text-gray-600 font-bold">•</span>
@@ -316,18 +419,23 @@
                             </div>
                         </div>
 
-                        <div class="flex items-center gap-2.5 pr-4">
-                            <div class="tier-mini-badge ${classBf}">
-                                <div class="tier-circle-icon"><img src="${LOGO_BEDFIGHT}"></div>
-                                <span class="tier-label-sub">${labelBf}</span>
+                        <div class="flex items-center gap-2 pr-4 flex-shrink-0">
+                            ${regionChipHTML(p.region)}
+                            <div class="tier-chip ${classGen}">
+                                <div class="icon-circle">🏆</div>
+                                <span class="code">${labelGen}</span>
                             </div>
-                            <div class="tier-mini-badge ${classRk}">
-                                <div class="tier-circle-icon"><img src="${LOGO_RBW}"></div>
-                                <span class="tier-label-sub">${labelRk}</span>
+                            <div class="tier-chip ${classBf}">
+                                <div class="icon-circle"><img src="${LOGO_BEDFIGHT}" alt=""></div>
+                                <span class="code">${labelBf}</span>
                             </div>
-                            <div class="tier-mini-badge ${classBw}">
-                                <div class="tier-circle-icon"><img src="${LOGO_BEDWARS}"></div>
-                                <span class="tier-label-sub">${labelBw}</span>
+                            <div class="tier-chip ${classRk}">
+                                <div class="icon-circle"><img src="${LOGO_RBW}" alt=""></div>
+                                <span class="code">${labelRk}</span>
+                            </div>
+                            <div class="tier-chip ${classBw}">
+                                <div class="icon-circle"><img src="${LOGO_BEDWARS}" alt=""></div>
+                                <span class="code">${labelBw}</span>
                             </div>
                         </div>
                     </div>
@@ -364,12 +472,11 @@
             document.getElementById('m-elo-bw').innerText = `${tierBwLabel} (${p.bwPts || 0} points)`;
 
             const boxGen = document.getElementById('m-box-bg-gen');
-            if(posGen == 1) boxGen.className = "modal-position-left text-black bg-[#e0a910]";
-            else if(posGen == 2) boxGen.className = "modal-position-left text-black bg-[#a1a8b8]";
-            else if(posGen == 3) boxGen.className = "modal-position-left text-white bg-[#cc6925]";
+            if (posGen == 1) boxGen.className = "modal-position-left text-black bg-[#e0a910]";
+            else if (posGen == 2) boxGen.className = "modal-position-left text-black bg-[#a1a8b8]";
+            else if (posGen == 3) boxGen.className = "modal-position-left text-white bg-[#cc6925]";
             else boxGen.className = "modal-position-left text-gray-300 bg-[#1f293d]";
 
-            // LOGICA REESTRUCTURADA PARA REDES EN FORMATO "GRID COLUMNS"
             const redesContainer = document.getElementById('redes-container');
             redesContainer.innerHTML = '';
             let contadorRedes = 0;
@@ -379,7 +486,7 @@
                     contadorRedes++;
                     return `
                         <a href="${url.trim()}" target="_blank" class="bg-[#171f30] hover:bg-[#1e2940] border border-gray-800 text-gray-300 text-[10px] font-bold py-2 px-1 rounded flex items-center justify-center gap-1.5 transition block truncate">
-                            <img src="${iconUrl}" class="w-3.5 h-3.5 object-contain"> ${plataforma}
+                            <img src="${iconUrl}" class="w-3.5 h-3.5 object-contain" alt=""> ${plataforma}
                         </a>`;
                 }
                 return '';
